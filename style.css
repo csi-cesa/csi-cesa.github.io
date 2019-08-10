@@ -1,0 +1,406 @@
+﻿@import url('http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:400,600,700'); 
+html {
+    height: 100%;
+  }
+
+.clear{
+    clear: both;
+}
+
+* {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+    }
+.sperator{
+    height: 30px;
+}
+/*----------------------------------------body starts here----------------------------------------*/
+ body {
+        font-family: 'Josefin Sans', sans-serif;
+     background-color: black;
+    color: white;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     min-height: 100%;
+     }
+/*-----------------------------------navigation bar------------------------------------------*/
+/*------------------------------------mobile view--------------------------------------------*/
+        .navbar {
+            font-size: 18px;
+            font-family: 'oswald';
+            font-size: 22px;
+            /*background-image: linear-gradient(260deg, #23ae63 0%, #c0cf6e 100%);*/
+            border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+            padding-bottom: 10px;
+        }
+
+        .main-nav {
+            list-style-type: none;
+            display: none;
+        }
+
+        .nav-links,
+        .logo {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .main-nav li {
+            text-align: center;
+            margin: 15px auto;
+        }
+        a.active{
+               color: rgba(113, 255, 101, 0.68);
+                text-decoration: none;
+            }
+        
+        .logo {
+            display: inline-block;
+            font-size: 22px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+
+        .navbar-toggle {
+            position: absolute;
+            top: 30px;
+            right: 20px;
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 24px;
+        }
+
+        .active {
+            display: block;
+        }
+/*------------------------------------mobile view ends here--------------------------------------------*/
+/*------------------------------------desktop view--------------------------------------------*/
+
+        @media screen and (min-width: 640px) {
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 0;
+                height: 80px;
+                align-items: center;
+                
+
+            }
+
+            .main-nav {
+                display: flex;
+               
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+
+          .main-nav li {
+                margin: 0;
+             
+            }
+
+            .nav-links {
+                
+                margin-right: 20px;
+    
+            }
+             a.active{
+               color: greenyellow;
+                text-decoration: none;
+                 margin-right: 20px;
+            }
+            
+            .logo {
+                margin-top: 0;
+            }
+
+            .navbar-toggle {
+                display: none;
+            }
+
+            .logo:hover,
+            .nav-links:hover {
+                color: rgba(124, 229, 107, 0.66);
+            }
+        }
+/*------------------------------------desktop view ends here--------------------------------------------*/
+        .logo img{
+
+            margin-left: 20px;
+
+        }
+/*----------------------------------------nav bar ends here---------------------------------------------*/
+
+.container{
+
+    width: auto;
+    padding: 20px;
+    height: 90%;
+  
+}
+
+.intro-img img{
+    width: 100%;
+    margin: 0;
+    height: 30%; 
+}
+/* .home{
+
+} */
+
+.heading-title {
+    font-family: Stencil Std;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    background-color: #1c1b1b;
+  
+}
+/*----------------------------------------about starts here---------------------------------------------*/
+.about{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.abt-sec{
+    border: 1px solid rgb(128, 128, 128,0.8);
+    box-shadow: 4px 6px rgb(208, 208, 208,0.2);
+    margin: auto;
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+.abt-name{
+    font-weight: 600;
+    margin-left: 5px;
+    font-family: 'changa',sans-serif;
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+.abt-text{
+    min-height: 80px;;
+    padding: 3px;
+   font-family: 'Montserrat', sans-serif;
+    line-height: 22px;
+}
+.magazine{
+    padding: 8px;
+    text-align: center;
+    font-size: 25px;
+    color: chartreuse;
+    font-family:  'Merriweather',sans-serif;
+}
+.magazine a{
+    text-decoration: none;
+    color: cornsilk;
+}
+.magazine a:hover{
+    color: rgba(255, 127, 80, 0.63);
+}
+
+/*----------------------------------------about ends here---------------------------------------------*/
+
+
+/*----------------------------------------council starts here---------------------------------------------*/
+
+.row{
+margin: auto;
+margin-top: 30px;
+    text-align: center;
+}
+.col{
+    margin: auto;
+    margin-right: 10px;
+    min-width: 20%;
+    padding: 20px;
+    height: 290px;
+    margin-bottom: 20px;
+    display: inline-block;
+    border: 0.8px solid gold;
+}
+.name{
+    font-family: 'blinker',sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+.post{
+    font-family: 'blinker',sans-serif;
+    text-align: center;
+}
+.image{
+   
+    text-align: center;
+    border: 1px solid grey;
+    margin-bottom: 5px;
+    overflow: hidden;
+    border-radius: 50%;
+    
+}
+
+.image img{
+     height: 220px;
+    width: 230px;
+  transition: transform 0.5s ease;
+
+}
+
+.image:hover img {
+  transform: scale(1.3);
+}
+.under{
+    margin: auto;
+    font-size: 30px;
+    color: gold;
+}
+/*----------------------------------------council ends here---------------------------------------------*/
+
+/*--------------------------------------events---------------------------------------*/
+.heading-page{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+    color: #eb7c1d;
+    font-family: 'Exo 2',sans-serif;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.event{
+    text-align: center;
+    background-color: #191818;
+    min-height: 140px;
+    margin: auto;
+     width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(82, 85, 82, 0.4);
+    box-shadow: 3px 5px #D8D8D8	;
+}
+.event-name{
+    font-family: 'blinker',sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin-left: 4px;
+    border-bottom: 1px solid rgba(82, 85, 82, 0.4);
+    
+}
+.event-des{
+    padding: 5px;
+    font-family: 'questrial',sans-serif;
+    font-size: 21px;
+}
+/*--------------------------------------events end---------------------------------------*/
+
+.cntnt{
+    padding-top: 20px;
+    text-align: justify;
+}
+.formmodel{
+    margin-top: 30px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+   
+    text-align: center;
+}
+.cnt-social{
+    margin-top: 5px;
+    margin-bottom: 15px; 
+    font-size: 18px;
+    font-weight: 500;
+    font-family: cursive;
+    
+}
+.cnt-social a{
+    color: coral;
+    padding-right: 12px;
+}
+.cnt-social a:hover{
+    color: greenyellow;
+}
+/*---------------------------------------------csi membership----------------------------------------*/
+.csi-mem{
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 30px;
+}
+/* .mem-details{
+
+    
+} */
+.mem-ques{
+    font-weight: bold;
+    font-size: 22px;
+    color: coral;
+}
+.mem-pay{
+    margin: auto;
+    
+}
+.mem-pay ul{
+    list-style: none;
+}
+.mem-pay li a{
+    text-decoration: none;
+    color: orange;
+
+}
+.mem-pay li a:hover{
+    color: greenyellow;
+}
+.mem-form{
+    margin-top: 10px;
+}
+.paytm{
+    margin: auto;
+    height: 100px;
+    width: 100px;
+}
+.paytm img{
+ transition: transform 0.5s ease;
+}
+.paytm img:hover{
+	transform: scale(1.3); 
+}
+
+.marq{
+    color: coral;
+    font-weight: bold;
+    font-size: 30px;
+    border: 1px solid rgba(245, 248, 237, 0.01);
+}
+
+/*---------------------------------------------csi membership ends----------------------------------------*/
+
+/*---------------------------------------------footer----------------------------------------*/
+#footer {
+    background-color:#101010;
+    height: auto;
+    width:100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.24);
+    text-align: center;
+    font-style: italic;
+    line-height: 26px;
+    padding: 20px;
+}
+#footer a{
+    text-decoration: none;
+    color: white;
+    padding-right: 8px;
+}
+
+#footer a:hover{
+    color:  rgba(113, 255, 101, 0.68)
+}
+
+.copyright {
+   margin-top: 2px;
+    height: 20px;
+    font-size: 15px;
+
+}
