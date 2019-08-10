@@ -79,7 +79,7 @@ html {
 /*------------------------------------mobile view ends here--------------------------------------------*/
 /*------------------------------------desktop view--------------------------------------------*/
 
-        @media screen and (min-width: 640px) {
+        @media screen and (min-width: 700px) {
             .navbar {
                 display: flex;
                 justify-content: space-between;
