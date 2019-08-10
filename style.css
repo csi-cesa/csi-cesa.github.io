@@ -59,7 +59,8 @@ html {
         .logo {
             display: inline-block;
             font-size: 22px;
-	        margin-top: 5px;
+	        margin-top: 20px;
+            margin-left: 20px;
         
         }
 
@@ -114,7 +115,7 @@ html {
             }
             
             .logo {
-                margin-top: 4px;;
+                margin-top: 4px;
             }
 
             .navbar-toggle {
