@@ -15,6 +15,9 @@ html {
 .sperator{
     height: 30px;
 }
+header, section, footer, aside, nav, main, article, figure {
+  display: block; 
+}
 /*----------------------------------------body starts here----------------------------------------*/
  body {
         font-family: 'Josefin Sans', sans-serif;
@@ -184,7 +187,7 @@ html {
 
 .abt-text{
     min-height: 80px;;
-    padding: 3px;
+    padding: 8px;
    font-family: 'Montserrat', sans-serif;
     line-height: 22px;
 }
