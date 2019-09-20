@@ -327,8 +327,9 @@ a.active {
 
 .event-des {
     padding: 5px;
+    padding-top: 10px;
     font-family: 'questrial', sans-serif;
-    font-size: 21px;
+    font-size: 18px;
 }
 
 /*--------------------------------------events end---------------------------------------*/
